@@ -1,0 +1,3 @@
+[submodule "JAAnimatingContainer"]
+	path = JAAnimatingContainer
+	url = git@github.com:joshaber/JAAnimatingContainer.git

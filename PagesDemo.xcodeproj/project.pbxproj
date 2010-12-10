@@ -11,9 +11,9 @@
 		256AC3DA0F4B6AC300CF3369 /* PDAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 256AC3D90F4B6AC300CF3369 /* PDAppDelegate.m */; };
 		887917E612AD97C10069498F /* PDCoolWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 887917E512AD97C10069498F /* PDCoolWindowController.m */; };
 		887917EA12AD97E40069498F /* PDCoolWindowController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 887917E912AD97E40069498F /* PDCoolWindowController.xib */; };
-		8879185912AD9A710069498F /* JAAnimatingContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = 8879185612AD9A710069498F /* JAAnimatingContainer.m */; };
-		8879185A12AD9A710069498F /* JABorderlessWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 8879185812AD9A710069498F /* JABorderlessWindow.m */; };
 		8879185D12AD9A7C0069498F /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8879185C12AD9A7C0069498F /* QuartzCore.framework */; };
+		88879A6412B2F0E9006A9135 /* JAAnimatingContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = 88879A6112B2F0E9006A9135 /* JAAnimatingContainer.m */; };
+		88879A6512B2F0E9006A9135 /* JABorderlessWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 88879A6312B2F0E9006A9135 /* JABorderlessWindow.m */; };
 		8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C165CFE840E0CC02AAC07 /* InfoPlist.strings */; };
 		8D11072D0486CEB800E47090 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; settings = {ATTRIBUTES = (); }; };
 		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
@@ -33,11 +33,11 @@
 		887917E412AD97C10069498F /* PDCoolWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PDCoolWindowController.h; sourceTree = "<group>"; };
 		887917E512AD97C10069498F /* PDCoolWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PDCoolWindowController.m; sourceTree = "<group>"; };
 		887917E912AD97E40069498F /* PDCoolWindowController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PDCoolWindowController.xib; sourceTree = "<group>"; };
-		8879185512AD9A710069498F /* JAAnimatingContainer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JAAnimatingContainer.h; path = ../ListDemoApp/Classes/JAAnimatingContainer.h; sourceTree = SOURCE_ROOT; };
-		8879185612AD9A710069498F /* JAAnimatingContainer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JAAnimatingContainer.m; path = ../ListDemoApp/Classes/JAAnimatingContainer.m; sourceTree = SOURCE_ROOT; };
-		8879185712AD9A710069498F /* JABorderlessWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JABorderlessWindow.h; path = ../ListDemoApp/Classes/JABorderlessWindow.h; sourceTree = SOURCE_ROOT; };
-		8879185812AD9A710069498F /* JABorderlessWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JABorderlessWindow.m; path = ../ListDemoApp/Classes/JABorderlessWindow.m; sourceTree = SOURCE_ROOT; };
 		8879185C12AD9A7C0069498F /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		88879A6012B2F0E9006A9135 /* JAAnimatingContainer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JAAnimatingContainer.h; path = JAAnimatingContainer/Classes/JAAnimatingContainer.h; sourceTree = "<group>"; };
+		88879A6112B2F0E9006A9135 /* JAAnimatingContainer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JAAnimatingContainer.m; path = JAAnimatingContainer/Classes/JAAnimatingContainer.m; sourceTree = "<group>"; };
+		88879A6212B2F0E9006A9135 /* JABorderlessWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JABorderlessWindow.h; path = JAAnimatingContainer/Classes/JABorderlessWindow.h; sourceTree = "<group>"; };
+		88879A6312B2F0E9006A9135 /* JABorderlessWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JABorderlessWindow.m; path = JAAnimatingContainer/Classes/JABorderlessWindow.m; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* PagesDemo-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "PagesDemo-Info.plist"; sourceTree = "<group>"; };
 		8D1107320486CEB800E47090 /* PagesDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PagesDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -110,10 +110,7 @@
 		29B97315FDCFA39411CA2CEA /* Other Sources */ = {
 			isa = PBXGroup;
 			children = (
-				8879185512AD9A710069498F /* JAAnimatingContainer.h */,
-				8879185612AD9A710069498F /* JAAnimatingContainer.m */,
-				8879185712AD9A710069498F /* JABorderlessWindow.h */,
-				8879185812AD9A710069498F /* JABorderlessWindow.m */,
+				88879A5B12B2F0D6006A9135 /* JAAnimatingContainer */,
 				256AC3F00F4B6AF500CF3369 /* PagesDemo_Prefix.pch */,
 				29B97316FDCFA39411CA2CEA /* main.m */,
 			);
@@ -136,6 +133,17 @@
 				1058C7A2FEA54F0111CA2CBB /* Other Frameworks */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		88879A5B12B2F0D6006A9135 /* JAAnimatingContainer */ = {
+			isa = PBXGroup;
+			children = (
+				88879A6012B2F0E9006A9135 /* JAAnimatingContainer.h */,
+				88879A6112B2F0E9006A9135 /* JAAnimatingContainer.m */,
+				88879A6212B2F0E9006A9135 /* JABorderlessWindow.h */,
+				88879A6312B2F0E9006A9135 /* JABorderlessWindow.m */,
+			);
+			name = JAAnimatingContainer;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -204,8 +212,8 @@
 				8D11072D0486CEB800E47090 /* main.m in Sources */,
 				256AC3DA0F4B6AC300CF3369 /* PDAppDelegate.m in Sources */,
 				887917E612AD97C10069498F /* PDCoolWindowController.m in Sources */,
-				8879185912AD9A710069498F /* JAAnimatingContainer.m in Sources */,
-				8879185A12AD9A710069498F /* JABorderlessWindow.m in Sources */,
+				88879A6412B2F0E9006A9135 /* JAAnimatingContainer.m in Sources */,
+				88879A6512B2F0E9006A9135 /* JABorderlessWindow.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
